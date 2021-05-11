@@ -21,7 +21,7 @@ export default class App extends Component {
     )
       .then((response) => response.json())
       .then((data) => {
-        if(data){
+        if(data.length != 0){
           this.setState({ result: data });
         }
       });
